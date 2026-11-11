@@ -1,25 +1,26 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>DecisionGuard — Privacy Policy</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;max-width:820px;margin:40px auto;padding:0 20px;color:#172b4d}h1{font-size:26px}h2{font-size:19px;margin-top:28px}code{background:#f1f2f4;padding:1px 5px;border-radius:4px}.muted{color:#5e6c84;font-size:14px}</style></head><body>
-<h1>Privacy Policy — DecisionGuard</h1>
-<p class="muted">Free Codegeist 2026 version · Version 1.0 · 11 November 2026</p>
-<p>Controller: the individual developer publishing the app ("the Developer", Sarmad Tawfeek). Contact: <a href="mailto:jdip5974@gmail.com">jdip5974@gmail.com</a>.</p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>DecisionGuard â€” Privacy Policy</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;max-width:820px;margin:40px auto;padding:0 20px;color:#172b4d}h1{font-size:26px}h2{font-size:19px;margin-top:28px}code{background:#f1f2f4;padding:1px 5px;border-radius:4px}.muted{color:#5e6c84;font-size:14px}</style></head><body>
+<h1>Privacy Policy â€” DecisionGuard</h1>
+<p class="muted">Free Codegeist 2026 version Â· Version 1.1 Â· 11 November 2026</p>
+<p>Controller: the individual developer publishing the app ("the Developer", Sarmad Tawfeek). Contact: <a href="mailto:nexusdeepseek@agentmail.to">nexusdeepseek@agentmail.to</a>.</p>
 <h2>What the app is</h2><p>DecisionGuard is a Confluence app that binds an approval to an evidence snapshot and marks the decision stale when that evidence changes. It is a free contest submission, not a commercial service.</p>
 <h2>What data the app stores (actual code behaviour)</h2>
 <p>Stored in Atlassian Forge key-value storage (<code>storage:app</code>), scoped to the installation:</p>
 <ul>
-<li>Decision title you type (free text, 2–200 characters).</li>
-<li>Linked Jira issue: key, status name, priority name, updated timestamp (read-only from Jira).</li>
+<li>Decision title you type (free text, 2â€“200 characters).</li>
+<li>Linked Jira issue: key, status name, priority name, updated timestamp (read-only from Jira; only if a Jira key is provided).</li>
 <li>Confluence page: page id and version number.</li>
 <li>Attestations: Atlassian accountId of reviewer(s), timestamp, optional free-text comment, a copy of the evidence snapshot, and a SHA-256 digest of that snapshot.</li>
 <li>Audit events: per-page hash-chained entries (action, actor accountId, digest, timestamps).</li>
-<li>A Jira-issue to page-id index for the event handler.</li>
+<li>A Jira-issue to page-id index for the event handler (only for Jira-linked decisions).</li>
 </ul>
 <p><strong>Not collected:</strong> page bodies, Jira descriptions/comments, attachments, email addresses, IP addresses, telemetry, analytics, or advertising identifiers. The app makes no external network calls other than Atlassian product APIs.</p>
 <h2>Why (purpose and legal basis)</h2><p>Purpose: provide the evidence-bound approval feature and show who approved what and when. Legal basis: performance of the requested feature for the site's users (GDPR Art. 6(1)(b)) and the site owner's legitimate interest in auditable change decisions (Art. 6(1)(f)). The site owner is responsible for informing its users.</p>
 <h2>Who can see it</h2><p>Anyone who can open the page and the byline item can see the decision and its status. Stored records are per installation and per page; Atlassian acts as platform processor under its own terms.</p>
-<h2>Retention and deletion</h2><p>Data is kept until the page user presses "Reset decision", which permanently deletes the decision and its audit journal for that page. Uninstalling the app removes the installation's storage according to Atlassian Forge platform behaviour. The app has no scheduled retention job and makes no backups of its own.</p>
-<h2>Your rights</h2><p>Access, correction, deletion and objection requests: <a href="mailto:jdip5974@gmail.com">jdip5974@gmail.com</a>. Because records are tied to Atlassian accountIds, the site administrator can identify the relevant records. You may also contact your Atlassian site administrator.</p>
+<h2>Retention and deletion</h2>
+<p><strong>Reset decision</strong> removes this page's decision and audit journal from the app's <strong>active</strong> storage, so it is no longer available in DecisionGuard. Atlassian may retain soft-deleted, recoverable copies and backups for its standard retention period; see <a href="https://developer.atlassian.com/platform/forge/storage-reference/hosted-storage-data-lifecycle/">Atlassian's Forge hosted-storage data lifecycle</a>. This means deletion removes the data from the app's active storage immediately, but is not an instantaneous irreversible erasure across Atlassian's platform backups.</p>
+<p>Uninstalling the app soft-deletes the installation's hosted storage under the same Atlassian lifecycle; recovery may be possible for a limited period. The app has no scheduled retention job of its own and makes no separate backups.</p>
+<h2>Your rights</h2><p>Access, correction, deletion and objection requests: <a href="mailto:nexusdeepseek@agentmail.to">nexusdeepseek@agentmail.to</a>. Because records are tied to Atlassian accountIds, the site administrator can identify the relevant records. You may also contact your Atlassian site administrator.</p>
 <h2>International transfers and processors</h2><p>Data stays in Atlassian Forge storage and Atlassian product APIs. The Developer does not transfer it to other services.</p>
-<h2>Security</h2><p>Read-only scopes toward Jira/Confluence plus app storage; no writes to page content. Integrity: journal entries are hash-chained and verified when read. <strong>This is not an immutability or tamper-proof guarantee</strong> — an installation administrator or the Reset action can delete or replace stored data.</p>
+<h2>Security</h2><p>Read-only scopes toward Jira/Confluence plus app storage; no writes to page content. Integrity: journal entries are hash-chained and verified when read. <strong>This is not an immutability or tamper-proof guarantee</strong> â€” an installation administrator or the Reset action can delete or replace stored data.</p>
 <h2>Changes</h2><p>Material changes will be published at the same location as this policy with a new date.</p>
-<p class="muted">This policy describes the implemented behaviour; the Founder remains responsible for legal review.</p>
 </body></html>
